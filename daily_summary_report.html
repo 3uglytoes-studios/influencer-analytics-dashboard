@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Platform Handles Performance Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-card: #1e293b;
+            --border-color: #334155;
+            --text-main: #cbd5e1;
+            --text-muted: #64748b;
+            --text-white: #ffffff;
+            --accent: #ff7e5f;
+            --highlight: #34d399;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            padding: 40px 20px;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            color: var(--text-white);
+            background: linear-gradient(135deg, var(--accent), #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            color: var(--text-white);
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        th, td {
+            padding: 14px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            color: var(--text-white);
+            font-weight: 600;
+            background-color: rgba(255,255,255,0.02);
+        }
+        tr:hover {
+            background-color: rgba(255,255,255,0.01);
+        }
+        .text-accent {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        .text-highlight {
+            color: var(--highlight);
+            font-weight: bold;
+        }
+        .badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        .badge-platform {
+            background: rgba(255,255,255,0.1);
+            color: var(--text-white);
+        }
+        .badge-scale {
+            background: rgba(52, 211, 153, 0.15);
+            color: #34d399;
+            border: 1px solid rgba(52, 211, 153, 0.3);
+        }
+        .badge-pivot {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        @media (max-width: 900px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Platform Social Media Handles Dashboard</h1>
+            <p style="color: var(--text-muted);">Platform Analytics Report Compiled on May 27, 2026</p>
+        </header>
+
+        <!-- Executive platform summary -->
+        <div class="card">
+            <h2>📈 Executive Platform Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Impressions</th>
+                        <th>Views</th>
+                        <th>Clicks</th>
+                        <th>CTR (%)</th>
+                        <th>Engagement Rate (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td><strong>Instagram</strong></td>
+            <td>17,500</td>
+            <td>0</td>
+            <td>948</td>
+            <td class="text-accent">5.42%</td>
+            <td class="text-highlight"><strong>7.10%</strong></td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Detailed Daily Post Performance -->
+        <div class="card">
+            <h2>📺 Detailed Daily Handle Performance</h2>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Platform</th>
+                            <th>Type</th>
+                            <th style="text-align: left;">Post Title / Caption</th>
+                            <th>Impressions</th>
+                            <th>Views</th>
+                            <th>Clicks</th>
+                            <th>CTR (%)</th>
+                            <th>Engagement Rate (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td>2026-05-25</td>
+            <td><span class="badge badge-platform">Instagram</span></td>
+            <td>Image</td>
+            <td style="text-align: left; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">[Creative_Summer_01] Sunset reflection thoughts... 🌅</td>
+            <td>9,500</td>
+            <td>0</td>
+            <td>363</td>
+            <td class="text-accent">3.82%</td>
+            <td class="text-highlight"><strong>4.43%</strong></td>
+        </tr>
+        
+        <tr>
+            <td>2026-05-25</td>
+            <td><span class="badge badge-platform">Instagram</span></td>
+            <td>Image</td>
+            <td style="text-align: left; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">[Creative_Active_02] Time to hit the track! 🏃‍♀️ #fitness</td>
+            <td>8,000</td>
+            <td>0</td>
+            <td>585</td>
+            <td class="text-accent">7.31%</td>
+            <td class="text-highlight"><strong>10.27%</strong></td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Demographic Breakdowns Grid -->
+        <div class="grid-layout">
+            <!-- Geography Demographics -->
+            <div class="card">
+                <h2>🌍 Audience Geography &amp; Region</h2>
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Platform</th>
+                                <th>Country</th>
+                                <th>State</th>
+                                <th>City</th>
+                                <th>Volume</th>
+                                <th>Spoken Language</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+            <tr>
+                <td><span class="badge badge-platform">YouTube</span></td>
+                <td>India</td>
+                <td>Uttar Pradesh</td>
+                <td>Rural/Semi-Urban</td>
+                <td>154,403,112</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Facebook</span></td>
+                <td>India</td>
+                <td>Uttar Pradesh</td>
+                <td>Rural/Semi-Urban</td>
+                <td>120,000,000</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Instagram</span></td>
+                <td>India</td>
+                <td>Maharashtra</td>
+                <td>Mumbai/Pune Metro</td>
+                <td>93,061,760</td>
+                <td>Marathi/English</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">YouTube</span></td>
+                <td>India</td>
+                <td>Bihar</td>
+                <td>Rural Heartland</td>
+                <td>77,259,579</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">YouTube</span></td>
+                <td>India</td>
+                <td>West Bengal</td>
+                <td>Kolkata/Semi-Urban</td>
+                <td>76,124,780</td>
+                <td>Bengali</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Facebook</span></td>
+                <td>India</td>
+                <td>Uttarakhand</td>
+                <td>Garhwal/Chamoli</td>
+                <td>65,000,000</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Facebook</span></td>
+                <td>India</td>
+                <td>Bihar</td>
+                <td>Rural Heartland</td>
+                <td>65,000,000</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Instagram</span></td>
+                <td>India</td>
+                <td>Tamil Nadu</td>
+                <td>Chennai Metro</td>
+                <td>62,404,947</td>
+                <td>Tamil</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">YouTube</span></td>
+                <td>India</td>
+                <td>Madhya Pradesh</td>
+                <td>Indore/Bhopal Rural</td>
+                <td>56,668,852</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Instagram</span></td>
+                <td>India</td>
+                <td>Karnataka</td>
+                <td>Bengaluru Tech Metro</td>
+                <td>54,772,332</td>
+                <td>Kannada</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">YouTube</span></td>
+                <td>India</td>
+                <td>Rajasthan</td>
+                <td>Jaipur/Rural</td>
+                <td>53,508,010</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Facebook</span></td>
+                <td>India</td>
+                <td>Madhya Pradesh</td>
+                <td>Indore/Bhopal Rural</td>
+                <td>45,000,000</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Facebook</span></td>
+                <td>India</td>
+                <td>Rajasthan</td>
+                <td>Jaipur/Rural</td>
+                <td>42,000,000</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">YouTube</span></td>
+                <td>India</td>
+                <td>Andhra Pradesh</td>
+                <td>Vizag/Semi-Urban</td>
+                <td>41,401,887</td>
+                <td>Telugu</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Instagram</span></td>
+                <td>India</td>
+                <td>Telangana</td>
+                <td>Hyderabad Metro</td>
+                <td>33,232,318</td>
+                <td>Telugu</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">YouTube</span></td>
+                <td>India</td>
+                <td>Kerala</td>
+                <td>Kochi/Diaspora</td>
+                <td>27,807,008</td>
+                <td>Malayalam</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">YouTube</span></td>
+                <td>India</td>
+                <td>Haryana</td>
+                <td>Gurugram/Rural</td>
+                <td>20,187,911</td>
+                <td>Hindi</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">Instagram</span></td>
+                <td>India</td>
+                <td>NCT Delhi</td>
+                <td>Delhi Metro</td>
+                <td>15,214,638</td>
+                <td>Hindi/English</td>
+            </tr>
+            
+            <tr>
+                <td><span class="badge badge-platform">YouTube</span></td>
+                <td>India</td>
+                <td>Uttarakhand</td>
+                <td>Garhwal/Chamoli</td>
+                <td>8,431,101</td>
+                <td>Hindi</td>
+            </tr>
+            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Age & Devices progress bars -->
+            <div class="card">
+                <h2>👥 Demographics Age &amp; Device Profiles</h2>
+                <div style="margin-bottom: 30px;">
+                    <h3 style="font-family:'Outfit'; font-size:1.1rem; color:var(--text-white); margin-bottom: 15px;">👤 Audience Age Segment Share</h3>
+                    
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 18–24 years (All)</span>
+                    <strong>42.0%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #a78bfa; height: 100%; width: 42.0%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 18-24 (Female)</span>
+                    <strong>38.5%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #f43f5e; height: 100%; width: 38.5%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 25–34 years (All)</span>
+                    <strong>31.5%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #a78bfa; height: 100%; width: 31.5%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 25-34 (Female)</span>
+                    <strong>28.2%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #f43f5e; height: 100%; width: 28.2%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 35–44 years (All)</span>
+                    <strong>12.8%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #a78bfa; height: 100%; width: 12.8%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 18-24 (Male)</span>
+                    <strong>12.4%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #38bdf8; height: 100%; width: 12.4%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 25-34 (Male)</span>
+                    <strong>10.1%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #38bdf8; height: 100%; width: 10.1%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 13–17 years (All)</span>
+                    <strong>8.7%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #a78bfa; height: 100%; width: 8.7%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 35-44 (Female)</span>
+                    <strong>5.5%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #f43f5e; height: 100%; width: 5.5%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 35-44 (Male)</span>
+                    <strong>5.3%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #38bdf8; height: 100%; width: 5.3%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>👤 45–54 years (All)</span>
+                    <strong>5.0%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: #a78bfa; height: 100%; width: 5.0%;"></div>
+                </div>
+            </div>
+            
+                </div>
+                <div>
+                    <h3 style="font-family:'Outfit'; font-size:1.1rem; color:var(--text-white); margin-bottom: 15px;">📱 Audience Device Type Share</h3>
+                    
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (iOS)</span>
+                    <strong>70.0%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 70.0%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (Reliance Jio)</span>
+                    <strong>53.5%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 53.5%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (Reliance Jio)</span>
+                    <strong>51.5%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 51.5%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (Bharti Airtel)</span>
+                    <strong>35.8%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 35.8%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (Bharti Airtel)</span>
+                    <strong>32.0%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 32.0%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (Android)</span>
+                    <strong>30.0%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 30.0%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (Vodafone Idea)</span>
+                    <strong>12.5%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 12.5%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (Vodafone Idea)</span>
+                    <strong>10.7%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 10.7%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (BSNL)</span>
+                    <strong>2.0%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 2.0%;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.82rem; margin-bottom: 4px;">
+                    <span>📱 Mobile phone (BSNL)</span>
+                    <strong>2.0%</strong>
+                </div>
+                <div style="background: #334155; height: 6px; border-radius: 4px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #10b981, #34d399); height: 100%; width: 2.0%;"></div>
+                </div>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+        
+        
+            <!-- Performance Engine Dynamic Decision Board -->
+            <div class="card" style="margin-top: 40px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 25px;">
+                    <h2 style="border: none; margin: 0; padding: 0;">🎯 Performance Engine Decisions &amp; ROI Optimizer</h2>
+                    <div style="font-size: 0.85rem; background: rgba(255,255,255,0.05); padding: 6px 12px; border-radius: 20px; border: 1px solid var(--border-color);">
+                        Target CPA Limit: <strong style="color: var(--accent);">$15.00</strong>
+                    </div>
+                </div>
+                <div class="campaigns-grid" style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+                    
+                <div class="campaign-card" style="background: rgba(255,255,255,0.02); border-radius: 12px; padding: 20px; border: 2px solid #34d399; box-shadow: 0 0 15px #34d39933; margin-bottom: 20px; position: relative;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <div>
+                            <span style="font-family: 'Outfit'; font-size: 1.25rem; font-weight: 700; color: #fff;">👤 Imli</span>
+                            <span style="color: var(--text-muted); font-size: 0.85rem; margin-left: 10px;">Vector: <strong>Summer_Vibe_Reel</strong></span>
+                        </div>
+                        <span class="badge badge-scale" style="font-size: 0.8rem; padding: 6px 12px; font-weight: 700;">SCALE SPEND</span>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 15px; text-align: center;">
+                        <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">Spend</span>
+                            <strong style="font-size: 1.1rem; color: #fff;">$200.00</strong>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">Conversions</span>
+                            <strong style="font-size: 1.1rem; color: #fff;">25</strong>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">Actual CPA</span>
+                            <strong style="font-size: 1.1rem; color: #34d399;">$8.00</strong>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">CTR (%)</span>
+                            <strong style="font-size: 1.1rem; color: #fff;">8.40%</strong>
+                        </div>
+                    </div>
+                    <div style="font-size: 0.85rem; background: rgba(0,0,0,0.2); border-left: 4px solid #34d399; padding: 10px 14px; border-radius: 0 8px 8px 0; color: var(--text-main); margin-top: 10px;">
+                        🤖 <strong>Engine Directive:</strong> SCALING: Pushing ad spend for Imli on vector 'Summer_Vibe_Reel' to capture maximum ROI.
+                    </div>
+                </div>
+                
+                <div class="campaign-card" style="background: rgba(255,255,255,0.02); border-radius: 12px; padding: 20px; border: 2px solid #fbbf24; box-shadow: 0 0 15px #fbbf2433; margin-bottom: 20px; position: relative;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <div>
+                            <span style="font-family: 'Outfit'; font-size: 1.25rem; font-weight: 700; color: #fff;">👤 Babajosh</span>
+                            <span style="color: var(--text-muted); font-size: 0.85rem; margin-left: 10px;">Vector: <strong>Skincare_Routine_Short</strong></span>
+                        </div>
+                        <span class="badge badge-pivot" style="font-size: 0.8rem; padding: 6px 12px; font-weight: 700;">PIVOT HOOK</span>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 15px; text-align: center;">
+                        <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">Spend</span>
+                            <strong style="font-size: 1.1rem; color: #fff;">$150.00</strong>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">Conversions</span>
+                            <strong style="font-size: 1.1rem; color: #fff;">8</strong>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">Actual CPA</span>
+                            <strong style="font-size: 1.1rem; color: #fbbf24;">$18.75</strong>
+                        </div>
+                        <div style="background: rgba(0,0,0,0.2); padding: 10px; border-radius: 8px;">
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px;">CTR (%)</span>
+                            <strong style="font-size: 1.1rem; color: #fff;">4.20%</strong>
+                        </div>
+                    </div>
+                    <div style="font-size: 0.85rem; background: rgba(0,0,0,0.2); border-left: 4px solid #fbbf24; padding: 10px 14px; border-radius: 0 8px 8px 0; color: var(--text-main); margin-top: 10px;">
+                        🤖 <strong>Engine Directive:</strong> PIVOTING: CPA too high for Babajosh on vector 'Skincare_Routine_Short'. Job dispatched: job_20260527_095330 for 'FinTech_Transparency_Trust' saved to /Users/sushiljoshi/Desktop/bridge/queue/job_20260527_095330.json
+                    </div>
+                </div>
+                
+                </div>
+            
+    </div>
+</body>
+</html>
