@@ -1,5 +1,5 @@
 # Social Media Performance & Demographics Report
-**Date of Report:** `2026-06-06`
+**Date of Report:** `2026-07-12`
 
 ---
 
@@ -91,5 +91,5 @@
 | Character | Vector | Spend | Conversions | CPA | CTR (%) | Action | Decision Details |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
 | Imli | Summer_Vibe_Reel | $200.00 | 25 | $8.00 | 8.40% | **SCALE SPEND** | SCALING: Pushing ad spend for Imli on vector 'Summer_Vibe_Reel' to capture maximum ROI. |
-| Babajosh | Skincare_Routine_Short | $150.00 | 8 | $18.75 | 4.20% | **PIVOT HOOK** | PIVOTING: CPA too high for Babajosh on vector 'Skincare_Routine_Short'. Job dispatched: job_20260606_132344 for 'FinTech_Transparency_Trust' saved to /Users/sushiljoshi/Desktop/Superstar_Portal/bridge/queue/job_20260606_132344.json |
+| Babajosh | Skincare_Routine_Short | $150.00 | 8 | $18.75 | 4.20% | **PIVOT HOOK** | PIVOTING: CPA too high for Babajosh on vector 'Skincare_Routine_Short'. Job dispatched: job_20260712_010355 for 'FinTech_Transparency_Trust' saved to /Users/sushiljoshi/Desktop/Superstar_Portal/bridge/queue/job_20260712_010355.json |
 
